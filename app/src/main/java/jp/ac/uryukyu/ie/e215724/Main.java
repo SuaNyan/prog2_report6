@@ -16,7 +16,16 @@ public class Main {
         
         int point = GameMaster.gamemaster(1) + GameMaster.gamemaster(2) + GameMaster.gamemaster(3);
         System.out.println("ゲームが終了しました!");
-        System.out.println("得点は"+point+"点です!お疲れ様です。");
+        System.out.print("得点は"+point+"点です!");
+        if (point==9){
+            System.out.print("最高得点です!素晴らしい!");
+        }else if(point>=7){
+            System.out.print("高得点です!凄い!");
+        }else if(point>=4){
+            System.out.print("まあまあです!お疲れ様!");
+        }else{
+            System.out.print("高得点目指して頑張りましょう!");
+        }
     }
     
 }
